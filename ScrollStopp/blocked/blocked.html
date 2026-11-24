@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="blockedPageTitle"></title>
+  <link rel="icon" href="../icons/icon16.png">
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="blocked.css">
+  <script type="module" src="blocked.js"></script>
+</head>
+<body>
+  <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <main class="layout">
+    <div class="left">
+      <section class="card meme-card">
+        <figure id="memeFrame" class="meme-frame" aria-busy="true">
+          <img id="memeImage" class="meme" alt="" hidden>
+          <div id="memeEmpty" class="meme-empty" hidden>
+            <strong data-i18n="memesEmptyTitle"></strong>
+            <p data-i18n="memesEmptyText"></p>
+          </div>
+        </figure>
+      </section>
+
+      <aside class="card insight" aria-labelledby="insightTitle">
+        <h2 id="insightTitle" class="insight-title" data-i18n="insightsTitle"></h2>
+        <p id="insightText" class="insight-text"></p>
+        <p class="insight-source">
+          <span data-i18n="insightSourceLabel"></span>
+          <a id="insightLink" target="_blank" rel="noopener noreferrer"></a>
+        </p>
+      </aside>
+    </div>
+
+    <section class="info">
+      <span class="kicker" data-i18n="blockedKicker"></span>
+      <h1 id="heading" class="heading"></h1>
+      <p id="motivation" class="motivation"></p>
+
+      <div class="card saved" aria-labelledby="savedTitle">
+        <h2 id="savedTitle" class="saved-title" data-i18n="blockedSavedTitle"></h2>
+        <div class="saved-grid">
+          <div class="saved-item">
+            <span id="savedToday" class="saved-value"></span>
+            <span class="saved-label" data-i18n="blockedSavedToday"></span>
+          </div>
+          <div class="saved-item">
+            <span id="savedTotal" class="saved-value"></span>
+            <span class="saved-label" data-i18n="blockedSavedTotal"></span>
+          </div>
+        </div>
+        <p id="savedNote" class="muted saved-note"></p>
+      </div>
+
+      <div class="actions">
+        <button id="anotherMeme" class="btn btn-accent" type="button" data-i18n="blockedAnotherMeme" hidden></button>
+        <button id="closeTab" class="btn btn-primary" type="button" data-i18n="blockedCloseTab"></button>
+      </div>
+      <a id="openSettings" class="settings-link" href="../options/options.html" data-i18n="blockedSettings"></a>
+    </section>
+  </main>
+</body>
+</html>

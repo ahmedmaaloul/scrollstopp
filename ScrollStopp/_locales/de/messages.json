@@ -1,0 +1,189 @@
+{
+  "extName": { "message": "ScrollStopp" },
+  "extDescription": { "message": "Sperrt Seiten, die dir Zeit stehlen, und zeigt dir stattdessen einen Fakt aus der Forschung. Hol dir deine Zeit zurück." },
+
+  "popupOpenSettings": { "message": "Einstellungen und Statistik" },
+  "popupCurrentSite": { "message": "Diese Seite" },
+  "popupNoSite": { "message": "Öffne eine Website, um sie zu sperren." },
+  "popupBlockButton": { "message": "Diese Seite sperren" },
+  "popupBlocking": { "message": "Wird gesperrt…" },
+  "popupStatusBlocked": { "message": "Gesperrt" },
+  "popupStatusNotBlocked": { "message": "Nicht gesperrt" },
+  "popupStatusPaused": { "message": "Pause laut Zeitplan" },
+  "popupStatusNeedsAccess": { "message": "Braucht Zugriff" },
+  "popupTodayLabel": { "message": "Heute abgewehrte Versuche" },
+  "popupSavedToday": {
+    "message": "Heute etwa $TIME$ gespart",
+    "placeholders": { "time": { "content": "$1", "example": "30 Min." } }
+  },
+
+  "sitesTitle": { "message": "Gesperrte Seiten" },
+  "sitesHint": { "message": "Sperrt die Seite samt allen Subdomains. Mit einem Pfad sperrst du nur einen Teil, zum Beispiel youtube.com/shorts." },
+  "sitesInputLabel": { "message": "Website zum Sperren" },
+  "sitesInputPlaceholder": { "message": "zum Beispiel instagram.com" },
+  "sitesAddButton": { "message": "Hinzufügen" },
+  "sitesAdded": {
+    "message": "$SITE$ ist jetzt gesperrt. Stark!",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "sitesRemoved": {
+    "message": "$SITE$ ist wieder freigegeben.",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "sitesNeedsAccessHint": { "message": "Seiten mit „Braucht Zugriff“ stehen auf deiner Liste, aber dein Browser hat ScrollStopp auf diesem Gerät noch nicht erlaubt, sie zu sperren. Ein Klick auf „Erlauben“ behebt das." },
+
+  "listEmpty": { "message": "Deine Liste ist leer. Füg eine Seite hinzu und leg los." },
+  "listRemove": { "message": "Entfernen" },
+  "listRemoveAria": {
+    "message": "$SITE$ entfernen",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "listNeedsAccess": { "message": "Braucht Zugriff" },
+  "listGrant": { "message": "Erlauben" },
+  "listGrantAria": {
+    "message": "ScrollStopp erlauben, $SITE$ zu sperren",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+
+  "errorInvalidSite": { "message": "Das sieht nicht nach einer Website aus. Versuch es mal mit etwas wie instagram.com" },
+  "errorAlreadyBlocked": {
+    "message": "$SITE$ ist schon gesperrt.",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "errorAccessDenied": {
+    "message": "ScrollStopp braucht Zugriff auf $SITE$, um die Seite sperren zu können.",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "errorSave": { "message": "Speichern hat nicht geklappt. Versuch es bitte noch einmal." },
+
+  "unblockTitle": {
+    "message": "$SITE$ wirklich freigeben?",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "unblockIntro": { "message": "Kurz durchatmen. Warte, bis der Timer abgelaufen ist, und tipp dann den Satz unten ab, wenn du das wirklich willst." },
+  "unblockSecondsLabel": { "message": "Sekunden Bedenkzeit" },
+  "unblockTimerDone": { "message": "Zeit ist um. Immer noch sicher?" },
+  "unblockTypeLabel": { "message": "Tipp diesen Satz ab:" },
+  "unblockPhrase": { "message": "Ich entscheide mich, meine Zeit zu verschwenden" },
+  "unblockInputPlaceholder": { "message": "Selbst tippen, nicht einfügen" },
+  "unblockKeep": { "message": "Bleibt gesperrt" },
+  "unblockConfirm": { "message": "Freigeben" },
+
+  "optionsPageTitle": { "message": "ScrollStopp Einstellungen" },
+  "optionsHeading": { "message": "Einstellungen und Statistik" },
+  "optionsTagline": { "message": "Hol dir deine Zeit zurück, Scroll für Scroll." },
+
+  "scheduleTitle": { "message": "Zeitplan" },
+  "scheduleAlways": { "message": "Immer sperren" },
+  "scheduleCustom": { "message": "Nur nach Zeitplan" },
+  "scheduleDays": { "message": "Tage" },
+  "scheduleFrom": { "message": "Von" },
+  "scheduleTo": { "message": "Bis" },
+  "scheduleHint": { "message": "Liegt das Ende vor dem Start, läuft die Sperre über Nacht. Sind Startzeit und Endzeit gleich, gilt die Sperre den ganzen Tag." },
+  "scheduleNoDays": { "message": "Wähl mindestens einen Tag aus, sonst wird nichts gesperrt." },
+  "scheduleActiveNow": { "message": "Die Sperre ist gerade aktiv." },
+  "schedulePausedNow": { "message": "Die Sperre macht gerade Pause." },
+  "day0": { "message": "So" },
+  "day1": { "message": "Mo" },
+  "day2": { "message": "Di" },
+  "day3": { "message": "Mi" },
+  "day4": { "message": "Do" },
+  "day5": { "message": "Fr" },
+  "day6": { "message": "Sa" },
+
+  "timeTitle": { "message": "Gesparte Zeit" },
+  "timeMinutesLabel": { "message": "Gesparte Minuten pro gesperrtem Besuch" },
+  "timeMinutesHint": { "message": "Damit wird die gesparte Zeit auf der Sperrseite geschätzt." },
+  "savedMessage": { "message": "Gespeichert" },
+
+  "statsTitle": { "message": "Statistik" },
+  "statsStoredLocally": { "message": "Die Statistik bleibt auf diesem Gerät." },
+  "statsToday": { "message": "Heute gesperrt" },
+  "statsWeek": { "message": "Letzte 7 Tage" },
+  "statsTotal": { "message": "Insgesamt" },
+  "statsSaved": { "message": "Gesparte Zeit" },
+  "statsEmpty": { "message": "Noch keine abgewehrten Versuche. Deine Serie guter Entscheidungen beginnt jetzt." },
+  "statsPerDay": { "message": "Abgewehrte Versuche pro Tag" },
+  "statsPerSite": { "message": "Abgewehrte Versuche pro Seite" },
+  "statsSiteColumn": { "message": "Seite" },
+  "statsCountColumn": { "message": "Versuche" },
+  "statsDayTooltip": {
+    "message": "$DATE$: $COUNT$ abgewehrt",
+    "placeholders": {
+      "date": { "content": "$1", "example": "Freitag, 31. Oktober" },
+      "count": { "content": "$2", "example": "4" }
+    }
+  },
+  "statsReset": { "message": "Statistik zurücksetzen" },
+  "statsResetConfirm": { "message": "Die ganze Statistik zurücksetzen? Das lässt sich nicht rückgängig machen." },
+
+  "durationMinutes": {
+    "message": "$MINUTES$ Min.",
+    "placeholders": { "minutes": { "content": "$1", "example": "40" } }
+  },
+  "durationHours": {
+    "message": "$HOURS$ Std. $MINUTES$ Min.",
+    "placeholders": {
+      "hours": { "content": "$1", "example": "2" },
+      "minutes": { "content": "$2", "example": "10" }
+    }
+  },
+  "durationHoursOnly": {
+    "message": "$HOURS$ Std.",
+    "placeholders": { "hours": { "content": "$1", "example": "3" } }
+  },
+
+  "blockedPageTitle": { "message": "Gesperrt von ScrollStopp" },
+  "blockedKicker": { "message": "Scrollen gestoppt!" },
+  "blockedHeading": {
+    "message": "$SITE$ ist gesperrt",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "blockedUnknownSite": { "message": "Diese Seite" },
+  "blockedSavedTitle": { "message": "Geschätzte gesparte Zeit" },
+  "blockedSavedToday": { "message": "Heute" },
+  "blockedSavedTotal": { "message": "Insgesamt" },
+  "blockedSavedNote": {
+    "message": "Gerechnet mit $MINUTES$ Minuten pro gesperrtem Besuch.",
+    "placeholders": { "minutes": { "content": "$1", "example": "10" } }
+  },
+  "blockedAnotherMeme": { "message": "Noch ein Meme, bitte" },
+  "blockedCloseTab": { "message": "Tab schließen" },
+  "blockedSettings": { "message": "Einstellungen und Statistik" },
+  "memeAlt": { "message": "Ein Meme zum Aufmuntern" },
+  "memesEmptyTitle": { "message": "Hier gibt's nichts zu scrollen." },
+  "memesEmptyText": { "message": "Genau darum geht's. Genieß die Ruhe." },
+
+  "motivation1": { "message": "Dein Daumen hat sich gerade eine Pause verdient." },
+  "motivation2": { "message": "Der Feed läuft dir nicht weg. Ehrenwort." },
+  "motivation3": { "message": "Draußen gibt's übrigens die beste Auflösung." },
+  "motivation4": { "message": "Zack, Algorithmus ausgetrickst. Gut gemacht!" },
+  "motivation5": { "message": "Dein zukünftiges Ich klatscht gerade Beifall." },
+  "motivation6": { "message": "Trink mal ein Glas Wasser. Dein Kopf sagt danke." },
+  "motivation7": { "message": "Die gewonnene Zeit gehört dir. Mach was Schönes draus." },
+  "motivation8": { "message": "Kurz strecken, tief durchatmen, eine Kleinigkeit abhaken." },
+  "motivation9": { "message": "Aus Langeweile entstehen die besten Ideen." },
+  "motivation10": { "message": "Verpasst hast du nichts. Und falls doch, kann es warten." },
+  "motivation11": { "message": "Kleiner Sieg, große Wirkung. Weiter so!" },
+  "motivation12": { "message": "Du bist die Hauptfigur, nicht der Feed." },
+
+  "localeCode": { "message": "de" },
+  "insightsTitle": { "message": "Schon gewusst?" },
+  "insightSourceLabel": { "message": "Quelle:" },
+  "insightsSectionTitle": { "message": "Warum das zählt" },
+  "insightsIntro": { "message": "Was die Forschung über endloses Scrollen sagt und was passiert, wenn Menschen weniger scrollen. Jeder Fakt verlinkt die Originalstudie." },
+  "insightText1": { "message": "Schon ein Handy in Reichweite kostet Denkleistung. In zwei Experimenten senkte seine bloße Anwesenheit die verfügbare geistige Kapazität, am stärksten bei Menschen, die besonders am Handy hängen." },
+  "insightSource1": { "message": "Ward et al. (2017), Journal of the Association for Consumer Research" },
+  "insightText2": { "message": "Endlose Kurzvideos lassen dich vergessen, was du eigentlich vorhattest. In einem Experiment von 2023 schwächte nur der Feed im Stil von TikTok das Erinnern an geplante Aufgaben, Twitter und YouTube nicht." },
+  "insightSource2": { "message": "Chiossi et al. (2023), CHI Conference on Human Factors in Computing Systems" },
+  "insightText3": { "message": "Studierende, die Facebook, Instagram und Snapchat drei Wochen lang auf 10 Minuten pro App und Tag begrenzten, fühlten sich deutlich weniger einsam und weniger depressiv." },
+  "insightSource3": { "message": "Hunt et al. (2018), Journal of Social and Clinical Psychology" },
+  "insightText4": { "message": "Wer Facebook vier Wochen lang deaktivierte, verbrachte mehr Zeit mit Familie und Freunden, fühlte sich wohler und nutzte es auch nach dem Experiment weniger." },
+  "insightSource4": { "message": "Allcott et al. (2020), American Economic Review" },
+  "insightText5": { "message": "Eine Woche ohne Facebook steigerte bei 1.095 Menschen die Lebenszufriedenheit und die positiven Gefühle, am meisten bei Vielnutzern und passiven Nutzern." },
+  "insightSource5": { "message": "Tromholt (2016), Cyberpsychology, Behavior, and Social Networking" },
+  "insightText6": { "message": "Junge Erwachsene, die soziale Medien am meisten nutzten, hatten eine etwa doppelt so hohe Chance auf Schlafprobleme wie die sparsamsten Nutzer. Befragt wurden 1.788 Menschen." },
+  "insightSource6": { "message": "Levenson et al. (2016), Preventive Medicine" },
+  "insightText7": { "message": "Forschende, die eine Skala für Doomscrolling entwickelten, fanden Zusammenhänge mit Angst, geringer Selbstkontrolle, der Angst, etwas zu verpassen, und problematischer Nutzung sozialer Medien." },
+  "insightSource7": { "message": "Sharma et al. (2022), Technology, Mind, and Behavior" }
+}

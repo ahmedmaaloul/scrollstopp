@@ -1,0 +1,189 @@
+{
+  "extName": { "message": "ScrollStopp" },
+  "extDescription": { "message": "Blocks time wasting sites and shows you a research fact instead. Take your time back." },
+
+  "popupOpenSettings": { "message": "Settings and stats" },
+  "popupCurrentSite": { "message": "This site" },
+  "popupNoSite": { "message": "Open a website to block it." },
+  "popupBlockButton": { "message": "Block this site" },
+  "popupBlocking": { "message": "Blocking…" },
+  "popupStatusBlocked": { "message": "Blocked" },
+  "popupStatusNotBlocked": { "message": "Not blocked" },
+  "popupStatusPaused": { "message": "Paused by schedule" },
+  "popupStatusNeedsAccess": { "message": "Needs access" },
+  "popupTodayLabel": { "message": "Blocked attempts today" },
+  "popupSavedToday": {
+    "message": "About $TIME$ saved today",
+    "placeholders": { "time": { "content": "$1", "example": "30 min" } }
+  },
+
+  "sitesTitle": { "message": "Blocked sites" },
+  "sitesHint": { "message": "Blocks the site and all of its subdomains. Add a path to block only part of a site, like youtube.com/shorts." },
+  "sitesInputLabel": { "message": "Website to block" },
+  "sitesInputPlaceholder": { "message": "for example instagram.com" },
+  "sitesAddButton": { "message": "Add" },
+  "sitesAdded": {
+    "message": "$SITE$ is now blocked. Nice move!",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "sitesRemoved": {
+    "message": "$SITE$ is unblocked.",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "sitesNeedsAccessHint": { "message": "Sites marked “Needs access” are on your list, but your browser hasn't allowed ScrollStopp to block them on this device yet. Click “Allow” to fix that." },
+
+  "listEmpty": { "message": "Your list is empty. Add a site to get started." },
+  "listRemove": { "message": "Remove" },
+  "listRemoveAria": {
+    "message": "Remove $SITE$",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "listNeedsAccess": { "message": "Needs access" },
+  "listGrant": { "message": "Allow" },
+  "listGrantAria": {
+    "message": "Allow ScrollStopp to block $SITE$",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+
+  "errorInvalidSite": { "message": "That doesn't look like a website. Try something like instagram.com" },
+  "errorAlreadyBlocked": {
+    "message": "$SITE$ is already blocked.",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "errorAccessDenied": {
+    "message": "ScrollStopp needs access to $SITE$ to block it.",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "errorSave": { "message": "Couldn't save that. Please try again." },
+
+  "unblockTitle": {
+    "message": "Unblock $SITE$?",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "unblockIntro": { "message": "Quick pause. Wait for the timer, then type the sentence below if you really want this." },
+  "unblockSecondsLabel": { "message": "seconds to think it over" },
+  "unblockTimerDone": { "message": "Time's up. Still sure?" },
+  "unblockTypeLabel": { "message": "Type this sentence:" },
+  "unblockPhrase": { "message": "I choose to waste my time" },
+  "unblockInputPlaceholder": { "message": "Type it here, no pasting" },
+  "unblockKeep": { "message": "Keep it blocked" },
+  "unblockConfirm": { "message": "Unblock" },
+
+  "optionsPageTitle": { "message": "ScrollStopp settings" },
+  "optionsHeading": { "message": "Settings and stats" },
+  "optionsTagline": { "message": "Take your time back, one stopped scroll at a time." },
+
+  "scheduleTitle": { "message": "Schedule" },
+  "scheduleAlways": { "message": "Always block" },
+  "scheduleCustom": { "message": "Only on a schedule" },
+  "scheduleDays": { "message": "Days" },
+  "scheduleFrom": { "message": "From" },
+  "scheduleTo": { "message": "To" },
+  "scheduleHint": { "message": "If the end is earlier than the start, blocking runs overnight. The same start and end time means all day." },
+  "scheduleNoDays": { "message": "Pick at least one day, otherwise nothing gets blocked." },
+  "scheduleActiveNow": { "message": "Blocking is on right now." },
+  "schedulePausedNow": { "message": "Blocking is paused right now." },
+  "day0": { "message": "Sun" },
+  "day1": { "message": "Mon" },
+  "day2": { "message": "Tue" },
+  "day3": { "message": "Wed" },
+  "day4": { "message": "Thu" },
+  "day5": { "message": "Fri" },
+  "day6": { "message": "Sat" },
+
+  "timeTitle": { "message": "Time saved" },
+  "timeMinutesLabel": { "message": "Minutes saved per blocked visit" },
+  "timeMinutesHint": { "message": "Used for the time saved estimate on the blocked page." },
+  "savedMessage": { "message": "Saved" },
+
+  "statsTitle": { "message": "Stats" },
+  "statsStoredLocally": { "message": "Stats stay on this device." },
+  "statsToday": { "message": "Blocked today" },
+  "statsWeek": { "message": "Last 7 days" },
+  "statsTotal": { "message": "All time" },
+  "statsSaved": { "message": "Time saved" },
+  "statsEmpty": { "message": "No blocked attempts yet. Your streak of good choices starts now." },
+  "statsPerDay": { "message": "Blocked attempts per day" },
+  "statsPerSite": { "message": "Blocked attempts per site" },
+  "statsSiteColumn": { "message": "Site" },
+  "statsCountColumn": { "message": "Attempts" },
+  "statsDayTooltip": {
+    "message": "$DATE$: $COUNT$ blocked",
+    "placeholders": {
+      "date": { "content": "$1", "example": "Friday, October 31" },
+      "count": { "content": "$2", "example": "4" }
+    }
+  },
+  "statsReset": { "message": "Reset stats" },
+  "statsResetConfirm": { "message": "Reset all stats? This can't be undone." },
+
+  "durationMinutes": {
+    "message": "$MINUTES$ min",
+    "placeholders": { "minutes": { "content": "$1", "example": "40" } }
+  },
+  "durationHours": {
+    "message": "$HOURS$ h $MINUTES$ min",
+    "placeholders": {
+      "hours": { "content": "$1", "example": "2" },
+      "minutes": { "content": "$2", "example": "10" }
+    }
+  },
+  "durationHoursOnly": {
+    "message": "$HOURS$ h",
+    "placeholders": { "hours": { "content": "$1", "example": "3" } }
+  },
+
+  "blockedPageTitle": { "message": "Blocked by ScrollStopp" },
+  "blockedKicker": { "message": "Scroll stopped!" },
+  "blockedHeading": {
+    "message": "$SITE$ is blocked",
+    "placeholders": { "site": { "content": "$1", "example": "instagram.com" } }
+  },
+  "blockedUnknownSite": { "message": "This site" },
+  "blockedSavedTitle": { "message": "Estimated time saved" },
+  "blockedSavedToday": { "message": "Today" },
+  "blockedSavedTotal": { "message": "All time" },
+  "blockedSavedNote": {
+    "message": "Counting $MINUTES$ minutes per blocked visit.",
+    "placeholders": { "minutes": { "content": "$1", "example": "10" } }
+  },
+  "blockedAnotherMeme": { "message": "Show me another meme" },
+  "blockedCloseTab": { "message": "Close this tab" },
+  "blockedSettings": { "message": "Settings and stats" },
+  "memeAlt": { "message": "A meme to cheer you up" },
+  "memesEmptyTitle": { "message": "Nothing to scroll here." },
+  "memesEmptyText": { "message": "That's the whole point. Enjoy the quiet." },
+
+  "motivation1": { "message": "Your thumb just earned a well deserved day off." },
+  "motivation2": { "message": "Plot twist: you're the main character, not the feed." },
+  "motivation3": { "message": "The feed will survive without you. Promise." },
+  "motivation4": { "message": "Fun fact: real life has amazing resolution." },
+  "motivation5": { "message": "Those minutes are yours again. Spend them on something that makes you smile." },
+  "motivation6": { "message": "Go grab a glass of water. Your brain says thanks." },
+  "motivation7": { "message": "You just outsmarted the algorithm. High five!" },
+  "motivation8": { "message": "Future you is already doing a happy dance." },
+  "motivation9": { "message": "Stretch, breathe, and knock out one tiny task." },
+  "motivation10": { "message": "Boredom is where good ideas start." },
+  "motivation11": { "message": "You didn't miss anything. And if you did, it can wait." },
+  "motivation12": { "message": "Small win, big deal. Keep it up!" },
+
+  "localeCode": { "message": "en" },
+  "insightsTitle": { "message": "Did you know?" },
+  "insightSourceLabel": { "message": "Source:" },
+  "insightsSectionTitle": { "message": "Why it matters" },
+  "insightsIntro": { "message": "What research says about endless scrolling, and what happens when people cut back. Every fact links to the original study." },
+  "insightText1": { "message": "Just having your phone within reach drains brainpower. In two experiments, its mere presence reduced people's available cognitive capacity, most of all for the most phone dependent." },
+  "insightSource1": { "message": "Ward et al. (2017), Journal of the Association for Consumer Research" },
+  "insightText2": { "message": "Short video feeds make you forget what you meant to do. In a 2023 experiment, only the TikTok style feed hurt people's memory for planned tasks; Twitter and YouTube did not." },
+  "insightSource2": { "message": "Chiossi et al. (2023), CHI Conference on Human Factors in Computing Systems" },
+  "insightText3": { "message": "Students who limited Facebook, Instagram and Snapchat to 10 minutes per app per day for three weeks felt significantly less lonely and less depressed." },
+  "insightSource3": { "message": "Hunt et al. (2018), Journal of Social and Clinical Psychology" },
+  "insightText4": { "message": "People who deactivated Facebook for four weeks spent more time with friends and family, reported higher well being, and used it less even after the experiment ended." },
+  "insightSource4": { "message": "Allcott et al. (2020), American Economic Review" },
+  "insightText5": { "message": "A one week break from Facebook raised life satisfaction and positive emotions among 1,095 people, with the biggest gains for heavy and passive users." },
+  "insightSource5": { "message": "Tromholt (2016), Cyberpsychology, Behavior, and Social Networking" },
+  "insightText6": { "message": "Young adults in the top quarter of social media use had about twice the odds of sleep problems compared with the lightest users, in a survey of 1,788 people." },
+  "insightSource6": { "message": "Levenson et al. (2016), Preventive Medicine" },
+  "insightText7": { "message": "Researchers who developed a scale for doomscrolling found it linked to anxiety, poor self control, fear of missing out and problematic social media use." },
+  "insightSource7": { "message": "Sharma et al. (2022), Technology, Mind, and Behavior" }
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="optionsPageTitle"></title>
+  <link rel="icon" href="../icons/icon16.png">
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="options.css">
+  <script type="module" src="options.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <img src="../icons/icon128.png" alt="" width="72" height="72" class="hero-logo">
+      <div>
+        <h1 data-i18n="optionsHeading"></h1>
+        <p class="muted" data-i18n="optionsTagline"></p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card" aria-labelledby="sitesHeading">
+        <h2 id="sitesHeading" data-i18n="sitesTitle"></h2>
+        <p class="muted hint" data-i18n="sitesHint"></p>
+        <form id="addForm" class="add-form" novalidate>
+          <label class="visually-hidden" for="siteInput" data-i18n="sitesInputLabel"></label>
+          <input id="siteInput" class="input" type="text" inputmode="url" autocomplete="off" spellcheck="false" data-i18n-placeholder="sitesInputPlaceholder">
+          <button class="btn btn-accent" type="submit" data-i18n="sitesAddButton"></button>
+        </form>
+        <p id="sitesStatus" class="status" role="status" hidden></p>
+        <ul id="siteList" class="site-list"></ul>
+        <p id="accessHint" class="muted hint small" data-i18n="sitesNeedsAccessHint" hidden></p>
+      </section>
+
+      <section class="card" aria-labelledby="scheduleHeading">
+        <h2 id="scheduleHeading" data-i18n="scheduleTitle"></h2>
+        <div class="choices" role="radiogroup" aria-labelledby="scheduleHeading">
+          <label class="choice"><input type="radio" name="mode" value="always"> <span data-i18n="scheduleAlways"></span></label>
+          <label class="choice"><input type="radio" name="mode" value="custom"> <span data-i18n="scheduleCustom"></span></label>
+        </div>
+        <fieldset id="customSchedule" class="custom">
+          <legend data-i18n="scheduleDays"></legend>
+          <div id="days" class="days"></div>
+          <div class="times">
+            <label><span data-i18n="scheduleFrom"></span> <input id="startTime" class="input" type="time" required></label>
+            <label><span data-i18n="scheduleTo"></span> <input id="endTime" class="input" type="time" required></label>
+          </div>
+          <p class="muted hint small" data-i18n="scheduleHint"></p>
+          <p id="noDaysWarning" class="status" data-kind="error" data-i18n="scheduleNoDays" hidden></p>
+        </fieldset>
+        <p id="scheduleState" class="schedule-state"></p>
+
+        <h2 class="spaced" data-i18n="timeTitle"></h2>
+        <label class="minutes">
+          <span data-i18n="timeMinutesLabel"></span>
+          <input id="minutesInput" class="input minutes-input" type="number" min="1" max="240" step="1">
+        </label>
+        <p class="muted hint small" data-i18n="timeMinutesHint"></p>
+        <p id="settingsStatus" class="status" role="status" hidden></p>
+      </section>
+    </div>
+
+    <section class="card stats" aria-labelledby="statsHeading">
+      <div class="stats-head">
+        <h2 id="statsHeading" data-i18n="statsTitle"></h2>
+        <span class="muted small" data-i18n="statsStoredLocally"></span>
+      </div>
+      <div class="tiles">
+        <div class="tile"><span id="statToday" class="tile-value"></span><span class="tile-label" data-i18n="statsToday"></span></div>
+        <div class="tile"><span id="statWeek" class="tile-value"></span><span class="tile-label" data-i18n="statsWeek"></span></div>
+        <div class="tile"><span id="statTotal" class="tile-value"></span><span class="tile-label" data-i18n="statsTotal"></span></div>
+        <div class="tile tile-sun"><span id="statSaved" class="tile-value"></span><span class="tile-label" data-i18n="statsSaved"></span></div>
+      </div>
+      <p id="statsEmpty" class="muted" data-i18n="statsEmpty" hidden></p>
+      <div id="statsBody" class="stats-body">
+        <div>
+          <h3 data-i18n="statsPerDay"></h3>
+          <div id="dayChart" class="chart"></div>
+        </div>
+        <div>
+          <h3 data-i18n="statsPerSite"></h3>
+          <table class="site-table">
+            <thead><tr><th scope="col" data-i18n="statsSiteColumn"></th><th scope="col" data-i18n="statsCountColumn"></th></tr></thead>
+            <tbody id="siteTable"></tbody>
+          </table>
+        </div>
+      </div>
+      <button id="resetStats" class="btn btn-ghost btn-small" type="button" data-i18n="statsReset"></button>
+    </section>
+
+    <section class="card" aria-labelledby="insightsHeading">
+      <h2 id="insightsHeading" data-i18n="insightsSectionTitle"></h2>
+      <p class="muted hint" data-i18n="insightsIntro"></p>
+      <ol id="insightList" class="insight-list"></ol>
+    </section>
+  </div>
+</body>
+</html>

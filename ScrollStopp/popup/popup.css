@@ -1,0 +1,40 @@
+body {
+  width: 360px;
+  min-height: 420px;
+  padding: 14px;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+}
+
+main { display: grid; gap: 12px; }
+
+.top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.logo { border-radius: 10px; }
+.brand { flex: 1; font-size: 22px; font-weight: 800; letter-spacing: 0.2px; }
+
+.card { padding: 16px; }
+
+.current-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.current-text { display: grid; min-width: 0; }
+.label { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
+.current-host { font-size: 20px; overflow-wrap: anywhere; }
+.no-site { margin: 6px 0 0; }
+.block-btn { width: 100%; margin-top: 14px; font-size: 17px; }
+
+.today { display: flex; align-items: center; gap: 14px; }
+.today-count {
+  min-width: 64px;
+  height: 64px;
+  padding: 0 10px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  background: var(--sun);
+  color: var(--on-sun);
+  font-size: 30px;
+  font-weight: 800;
+}
+.today-label { display: block; font-size: 16px; }
+.today-saved { font-size: 14px; }
+
+.section-title { display: flex; align-items: center; gap: 8px; font-size: 16px; margin: 4px 4px 8px; }
+.list-card { padding: 6px 14px; max-height: 230px; overflow-y: auto; }

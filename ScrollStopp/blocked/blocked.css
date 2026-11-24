@@ -1,0 +1,122 @@
+body {
+  min-height: 100vh;
+  font-size: 18px;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 85% 8%, rgba(255, 210, 63, 0.55), transparent 22%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+  background-attachment: fixed;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background:
+      radial-gradient(circle at 85% 8%, rgba(255, 210, 63, 0.18), transparent 22%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+  }
+}
+
+.layout {
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: grid;
+  gap: 28px;
+  align-items: center;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+}
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; padding-top: 24px; }
+}
+
+/* Meme and research fact */
+.left { display: grid; gap: 16px; min-width: 0; }
+.insight { padding: 16px 20px; border-left: 6px solid var(--sun); }
+.insight-title { font-size: 15px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); }
+.insight-text { margin: 6px 0 8px; font-size: 17px; font-weight: 600; }
+.insight-source { margin: 0; font-size: 14px; color: var(--muted); }
+.insight-source a { font-weight: 600; }
+
+.meme-card { padding: 14px; }
+.meme-frame {
+  margin: 0;
+  min-height: clamp(200px, 40vh, 300px);
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: var(--surface-soft);
+  overflow: hidden;
+}
+.meme {
+  display: block;
+  max-width: 100%;
+  max-height: 56vh;
+  object-fit: contain;
+  border-radius: 12px;
+  animation: pop-in 0.25s ease-out;
+}
+.meme-empty { padding: 36px 28px; text-align: center; }
+.meme-empty strong { display: block; font-size: 28px; margin-bottom: 8px; }
+.meme-empty p { margin: 0; color: var(--muted); }
+
+/* Text side */
+.info { display: grid; gap: 16px; justify-items: start; }
+.kicker {
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--sun);
+  color: var(--on-sun);
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  transform: rotate(-2deg);
+}
+.heading { font-size: clamp(32px, 5vw, 52px); font-weight: 800; overflow-wrap: anywhere; }
+.motivation { margin: 0; font-size: clamp(20px, 2.4vw, 26px); font-weight: 600; color: var(--primary); }
+
+.saved { width: 100%; padding: 18px 20px; }
+.saved-title { font-size: 15px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); }
+.saved-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.saved-item { display: grid; padding: 12px 14px; border-radius: 16px; background: var(--surface-soft); }
+.saved-item:first-child { background: var(--sun); color: var(--on-sun); }
+.saved-value { font-size: clamp(20px, 4.5vw, 28px); font-weight: 800; }
+.saved-label { font-size: 14px; font-weight: 700; opacity: 0.85; }
+.saved-note { margin: 10px 0 0; font-size: 14px; }
+
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.actions .btn { font-size: 17px; }
+.settings-link { font-size: 15px; }
+
+/* Floating bubbles, pure CSS */
+.bubbles { position: fixed; inset: 0; overflow: hidden; pointer-events: none; }
+.bubbles i {
+  position: absolute;
+  bottom: -80px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.15) 60%, transparent 70%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  animation: rise 14s linear infinite;
+  opacity: 0.7;
+}
+.bubbles i:nth-child(1) { left: 6%; animation-delay: 0s; }
+.bubbles i:nth-child(2) { left: 18%; width: 16px; height: 16px; animation-delay: 4s; animation-duration: 11s; }
+.bubbles i:nth-child(3) { left: 34%; width: 40px; height: 40px; animation-delay: 8s; animation-duration: 18s; }
+.bubbles i:nth-child(4) { left: 52%; width: 20px; height: 20px; animation-delay: 2s; }
+.bubbles i:nth-child(5) { left: 68%; width: 34px; height: 34px; animation-delay: 6s; animation-duration: 16s; }
+.bubbles i:nth-child(6) { left: 82%; width: 14px; height: 14px; animation-delay: 1s; animation-duration: 10s; }
+.bubbles i:nth-child(7) { left: 93%; width: 24px; height: 24px; animation-delay: 9s; }
+
+@keyframes rise {
+  from { transform: translate(0, 0); }
+  50% { transform: translate(14px, -55vh); }
+  to { transform: translate(-10px, -115vh); }
+}
+@keyframes pop-in {
+  from { transform: scale(0.96); opacity: 0.4; }
+  to { transform: scale(1); opacity: 1; }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="extName"></title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="popup.js"></script>
+</head>
+<body>
+  <header class="top">
+    <img class="logo" src="../icons/icon48.png" alt="" width="32" height="32">
+    <h1 class="brand" data-i18n="extName"></h1>
+    <button id="openOptions" class="btn btn-ghost btn-icon" type="button" data-i18n-title="popupOpenSettings" data-i18n-aria-label="popupOpenSettings">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1.08-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1.08 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.6.85 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.66 0-1.25.4-1.51 1z"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <section class="card current" aria-live="polite">
+      <div class="current-row">
+        <div class="current-text">
+          <span class="label" data-i18n="popupCurrentSite"></span>
+          <strong id="currentHost" class="current-host"></strong>
+        </div>
+        <span id="currentStatus" class="pill" hidden></span>
+      </div>
+      <p id="noSite" class="muted no-site" data-i18n="popupNoSite" hidden></p>
+      <button id="blockButton" class="btn btn-accent block-btn" type="button" data-i18n="popupBlockButton" hidden></button>
+      <button id="grantButton" class="btn btn-accent block-btn" type="button" data-i18n="listGrant" hidden></button>
+      <p id="status" class="status" role="status" hidden></p>
+    </section>
+
+    <section class="card today">
+      <span id="todayCount" class="today-count"></span>
+      <div>
+        <strong class="today-label" data-i18n="popupTodayLabel"></strong>
+        <span id="todaySaved" class="muted today-saved"></span>
+      </div>
+    </section>
+
+    <section class="sites">
+      <h2 class="section-title">
+        <span data-i18n="sitesTitle"></span>
+        <span id="siteCount" class="pill"></span>
+      </h2>
+      <div class="card list-card">
+        <ul id="siteList" class="site-list"></ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
